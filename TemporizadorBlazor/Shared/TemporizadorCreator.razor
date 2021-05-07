@@ -1,0 +1,32 @@
+﻿<button class="btnClose" @onclick="Close">X</button>
+<h3>Nuevo Temporizador</h3>
+Tiempo @Hours.ToString().PadLeft(2, '0'):@Minutes.ToString().PadLeft(2, '0')
+<br />
+
+@for (int r = 0, i = 0, rF = Rows; r < rF && i < Incrementos.Length; r++)
+{
+    @for (int c = 0; c < Columns && i < Incrementos.Length; c++, i++)
+    {
+        int pos = i;
+        <button class="btnAddTime" @onclick="()=> TotalIncremento+=Incrementos[pos]">+@Incrementos[i]</button>
+    }
+    <br />
+}
+<br />
+<button @onclick="@(() => TotalIncremento = 0)">Reset</button>
+<button @onclick="@(()=>Created.InvokeAsync(TotalIncremento))">Crear</button>
+
+@code {
+
+    int[] Incrementos { get; set; } = { 1, 5, 10, 15, 30, 60 };
+    int TotalIncremento { get; set; } = 0;
+
+    [Parameter] public int Columns { get; set; } = 3;
+    [Parameter] public EventCallback<int> Created { get; set; }
+    [Parameter] public EventCallback Close { get; set; }
+
+    int Rows => Incrementos.Length % Columns == 0 ? Incrementos.Length / Columns : (Incrementos.Length / Columns) + 1;
+    int Hours => TotalIncremento / 60;
+    int Minutes => TotalIncremento % 60;
+
+}
