@@ -184,12 +184,28 @@ app {
 
 /*mi css*/
 .btnOkey {
-
+    background-color:darkviolet;
 }
+
 .btnAddTime {
     width: 50px;
-    background-color: lightgray;
+    margin-bottom: 5px;
+    display: flex;
+    float: left;
+   
 }
-.btnClose{
-
+.btnsIncrements{
+    width:180px;
+}
+.btnClose {
+}
+.temporizador{
+    margin:5px;
+    display:flex;
+    float:left;
+}
+.tempContainer{
+    max-height:350px;
+    overflow-y:auto;
+    width:350px;
 }

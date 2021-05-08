@@ -1,6 +1,7 @@
-﻿<button class="btnOkey" @onclick="()=> { OkeyClick.InvokeAsync(HoraFin); }">Okey</button>
-<text>@HoraFin.Hour.ToString().PadLeft(2, '0'):@(HoraFin.Minute.ToString().PadLeft(2,'0'))</text>
-
+﻿<div class="temporizador">
+    <button class="btn btn-danger btnOkey" @onclick="()=> { OkeyClick.InvokeAsync(HoraFin); }">Okey</button>
+    <text>@HoraFin.Hour.ToString().PadLeft(2, '0'):@(HoraFin.Minute.ToString().PadLeft(2,'0'))</text>
+</div>
 @code {
     [Parameter] public DateTime HoraFin { get; set; }
     [Parameter]public EventCallback<DateTime> OkeyClick { get; set; }

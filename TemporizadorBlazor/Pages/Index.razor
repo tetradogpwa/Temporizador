@@ -19,14 +19,16 @@ else if (MostrarCreador)
 }
 else
 {
-    <h1>Temporizadores</h1>
-    @foreach (var temp in Temporizadores)
-    {
-        <Temporizador HoraFin="temp.Value" OkeyClick="()=>RemoveTemporizador(temp.Key)" />
-        <br />
-    }
-    <br />
-    <button @onclick="@(()=>MostrarCreador=true)">+</button>
+    <button class="btn btn-success" @onclick="@(()=>MostrarCreador=true)">+</button>
+    <div class="tempContainer">
+        @foreach (var temp in Temporizadores)
+        {
+
+            <Temporizador HoraFin="temp.Value" OkeyClick="()=>RemoveTemporizador(temp.Key)" />
+
+        }
+    </div>
+
 }
 
 @code{
@@ -38,7 +40,7 @@ else
     bool MostrarAviso { get; set; } = default;
     Timer Timer { get; set; }
     Timer BeepSound { get; set; }
-    int CicloBeep{ get; set; } = 0;
+    int CicloBeep { get; set; } = 0;
 
     System.Threading.Semaphore Semaphore { get; set; }
 
