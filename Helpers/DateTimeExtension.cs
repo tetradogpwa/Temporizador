@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TemporizadorBlazor.Helpers
+namespace TemporizadoresBlazor.Helpers
 {
     public static class DateTimeExtension
     {
