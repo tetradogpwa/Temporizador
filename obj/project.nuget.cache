@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xLCNGBD+ZteJzXNJl+i8pP1PMz6UIfDH29rkIoLGLL9CFXTEyuLgzrJ05w3shoB1wK1zYoOVGyK0hKz5+hE7Sg==",
+  "dgSpecHash": "oYxaBpm7CWeHVZuiHd14xQpqnlPi1DUEsqSVjATCNmNJxBIBAazbvEo+YEgkSPUC3PlDolFD8TphF4ynQuFeVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tetra\\source\\repos\\TemporizadoresBlazor\\TemporizadoresBlazor\\TemporizadoresBlazor.csproj",
+  "projectFilePath": "C:\\Users\\tetra\\source\\repos\\TemporizadorBlazor\\TemporizadoresBlazor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tetra\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.3\\microsoft.aspnetcore.authorization.3.1.3.nupkg.sha512",
     "C:\\Users\\tetra\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.3\\microsoft.aspnetcore.components.3.1.3.nupkg.sha512",

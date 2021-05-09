@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tetra\\source\\repos\\TemporizadoresBlazor\\TemporizadoresBlazor\\TemporizadoresBlazor.csproj": {}
+    "C:\\Users\\tetra\\source\\repos\\TemporizadorBlazor\\TemporizadoresBlazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tetra\\source\\repos\\TemporizadoresBlazor\\TemporizadoresBlazor\\TemporizadoresBlazor.csproj": {
+    "C:\\Users\\tetra\\source\\repos\\TemporizadorBlazor\\TemporizadoresBlazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tetra\\source\\repos\\TemporizadoresBlazor\\TemporizadoresBlazor\\TemporizadoresBlazor.csproj",
+        "projectUniqueName": "C:\\Users\\tetra\\source\\repos\\TemporizadorBlazor\\TemporizadoresBlazor.csproj",
         "projectName": "TemporizadoresBlazor",
-        "projectPath": "C:\\Users\\tetra\\source\\repos\\TemporizadoresBlazor\\TemporizadoresBlazor\\TemporizadoresBlazor.csproj",
+        "projectPath": "C:\\Users\\tetra\\source\\repos\\TemporizadorBlazor\\TemporizadoresBlazor.csproj",
         "packagesPath": "C:\\Users\\tetra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tetra\\source\\repos\\TemporizadoresBlazor\\TemporizadoresBlazor\\obj\\",
+        "outputPath": "C:\\Users\\tetra\\source\\repos\\TemporizadorBlazor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
