@@ -2,37 +2,57 @@
 
 @using System.Timers
 
+
 @implements IDisposable
 
 @inject IJSRuntime JSRuntime
 
+<div class="container">
+    @if (MostrarAviso)
+    {
+        <div class="row">
+            <button class="btn btn-info offset-1 col-9" @onclick="@(()=> {
+                                                                    MostrarAviso = false;
+                                                                    if (DateTime.Now >= TimeReference)
+                                                                        TimeReference = default(DateTime);
+                                                                    })">
+                Aviso Temporizador a saltado!
+            </button>
+            <audio id="sound" src="Data/beep.mp3"></audio>
+        </div>
+    }
 
-@if (MostrarAviso)
-{
-    <button @onclick="@(()=>MostrarAviso=false)">Aviso Temporizador a saltado!</button>
-    <audio id="sound" src="Data/beep.mp3"></audio>
-}
+    else if (MostrarCreador)
+    {
 
-else if (MostrarCreador)
-{
-    <TemporizadorCreator Created="AddTemporizador" Close="@(()=>MostrarCreador=false)" />
-}
-else
-{
-    <button class="btn btn-success" @onclick="@(()=>MostrarCreador=true)">+</button>
-    <div class="tempContainer">
-        @foreach (var temp in Temporizadores)
-        {
 
-            <Temporizador HoraFin="temp.Value" OkeyClick="()=>RemoveTemporizador(temp.Key)" />
+        <TemporizadorBuilder Created="AddTemporizador" Close="@(() => MostrarCreador = false)" ReferenceTime="@(TimeReference.IsValid() && DateTime.Now.TotalMinutes()<TimeReference.TotalMinutes()?TimeReference:default(DateTime))" />
 
-        }
-    </div>
 
-}
+    }
+    else
+    {
+        <div class="row">
+            <button class="btn btn-success offset-1 col-9" @onclick="@(()=> { MostrarCreador = true;TimeReference = default(DateTime); })"></button>
+        </div>
+        <div class="tempContainer row">
+            @foreach (var temp in Temporizadores)
+            {
+
+                <Temporizador HoraFin="temp.Value" OkeyClick="()=>RemoveTemporizador(temp.Key)" ContextClick="(referenceTime)=> {
+                                                                                                          TimeReference = referenceTime;
+                                                                                                          MostrarCreador = true;
+                                                                                                        }" />
+
+
+            }
+        </div>
+
+    }
+</div>
 
 @code{
-    const int REFRESHTIME = 5;
+    const int REFRESHTIME = 1;
     const int TOTALTIMEBEEP = 30;
 
     SortedList<double, DateTime> Temporizadores { get; set; } = new SortedList<double, DateTime>();
@@ -41,6 +61,7 @@ else
     Timer Timer { get; set; }
     Timer BeepSound { get; set; }
     int CicloBeep { get; set; } = 0;
+    DateTime TimeReference = default(DateTime);
 
     System.Threading.Semaphore Semaphore { get; set; }
 
@@ -109,7 +130,7 @@ else
     {
         Timer.Dispose();
         Semaphore.Dispose();
-        //    BeepSound.Dispose();
+        BeepSound.Dispose();
     }
     void AddTemporizador(int totalMinutos)
     {
@@ -126,6 +147,7 @@ else
             {
                 Temporizadores.Add(total, new DateTime(TimeSpan.FromMinutes(total).Ticks));
                 MostrarCreador = false;
+                TimeReference = default(DateTime);
 
             }
             Semaphore.Release();
