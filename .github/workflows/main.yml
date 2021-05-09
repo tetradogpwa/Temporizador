@@ -18,9 +18,9 @@ on:
         dotnet-version: 3.1
             # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
-      run: dotnet publish BlazorGitHubPagesDemo.csproj -c Release -o release --nologo
-          - name: Commit wwwroot to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@3.7.1
+      run: dotnet publish TemporizadorBlazor/TemporizadorBlazor.csproj -c Release -o release --nologo
+          - name: Commit TemporizadorBlazor/wwwroot to GitHub Pages
+      uses: tetradogpwa/github-pages-deploy-action@3.7.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
