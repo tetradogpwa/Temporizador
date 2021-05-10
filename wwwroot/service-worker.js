@@ -10,7 +10,7 @@ self.addEventListener('fetch', e => {
             resp = fetch(e.request).then(respuesta => {
                 var respCache = respuesta.clone();
                 caches.open(CACHE_NAME).then(cache => cache.put(e.request, respCache));
-                return respuesta;
+                return respuesta.clone();
             });
         }
         return resp;
