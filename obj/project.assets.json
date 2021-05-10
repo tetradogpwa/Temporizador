@@ -1457,9 +1457,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tetra\\source\\repos\\TemporizadorBlazor\\TemporizadoresBlazor.csproj",
-      "projectName": "TemporizadoresBlazor",
-      "projectPath": "C:\\Users\\tetra\\source\\repos\\TemporizadorBlazor\\TemporizadoresBlazor.csproj",
+      "projectUniqueName": "C:\\Users\\tetra\\source\\repos\\TemporizadorBlazor\\Temporizadores.csproj",
+      "projectName": "Temporizadores",
+      "projectPath": "C:\\Users\\tetra\\source\\repos\\TemporizadorBlazor\\Temporizadores.csproj",
       "packagesPath": "C:\\Users\\tetra\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\tetra\\source\\repos\\TemporizadorBlazor\\obj\\",
       "projectStyle": "PackageReference",

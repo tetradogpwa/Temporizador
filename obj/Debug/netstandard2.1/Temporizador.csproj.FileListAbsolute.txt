@@ -1,0 +1,12 @@
+C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Debug\netstandard2.1\Temporizador.csprojAssemblyReference.cache
+C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Debug\netstandard2.1\Temporizador.AssemblyInfoInputs.cache
+C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Debug\netstandard2.1\Temporizador.AssemblyInfo.cs
+C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Debug\netstandard2.1\Temporizador.csproj.CoreCompileInputs.cache
+C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Debug\netstandard2.1\Temporizador.RazorComponent.input.cache
+C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Debug\netstandard2.1\RazorDeclaration\App.razor.g.cs
+C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Debug\netstandard2.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Debug\netstandard2.1\RazorDeclaration\Shared\Temporizador.razor.g.cs
+C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Debug\netstandard2.1\RazorDeclaration\Shared\TemporizadorBuilder.razor.g.cs
+C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Debug\netstandard2.1\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Debug\netstandard2.1\Temporizador.RazorComponent.output.cache
