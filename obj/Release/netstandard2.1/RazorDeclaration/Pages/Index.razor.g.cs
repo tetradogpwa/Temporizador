@@ -99,110 +99,111 @@ using System.Timers;
         #pragma warning restore 1998
 #nullable restore
 #line 54 "C:\Users\tetra\source\repos\TemporizadorBlazor\Pages\Index.razor"
-      
-    const int REFRESHTIME = 1;
-    const int TOTALTIMEBEEP = 30;
+          
+        const int REFRESHTIME = 1;
+        const int TOTALTIMEBEEP = 30;
 
-    SortedList<double, DateTime> Temporizadores { get; set; } = new SortedList<double, DateTime>();
-    bool MostrarCreador { get; set; } = false;
-    bool MostrarAviso { get; set; } = default;
-    Timer Timer { get; set; }
-    Timer BeepSound { get; set; }
-    int CicloBeep { get; set; } = 0;
-    DateTime TimeReference = default(DateTime);
+        SortedList<double, DateTime> Temporizadores { get; set; } = new SortedList<double, DateTime>();
+        bool MostrarCreador { get; set; } = false;
+        bool MostrarAviso { get; set; } = default;
+        Timer Timer { get; set; }
+        Timer BeepSound { get; set; }
+        int CicloBeep { get; set; } = 0;
+        DateTime TimeReference = default(DateTime);
 
-    System.Threading.Semaphore Semaphore { get; set; }
+        System.Threading.Semaphore Semaphore { get; set; }
 
-    protected override void OnInitialized()
-    {
-        Timer = new Timer();
-        Timer.Interval = REFRESHTIME * 1000;
-        Timer.Elapsed += CheckTimersOut;
-        Semaphore = new System.Threading.Semaphore(1, 1);
-        BeepSound = new Timer();
-        BeepSound.Interval = 500;
-        BeepSound.Elapsed += BeepTime;
-        Timer.Start();
-
-    }
-    void BeepTime(object sender, ElapsedEventArgs e)
-    {
-        if (MostrarAviso)
+        protected override void OnInitialized()
         {
-
-            JSRuntime.InvokeVoidAsync("eval",
-           "document.getElementById(\'sound\').play();");
-
-            MostrarAviso = ++CicloBeep % TOTALTIMEBEEP != 0;
-
-
+            Timer = new Timer();
+            Timer.Interval = REFRESHTIME * 1000;
+            Timer.Elapsed += CheckTimersOut;
+            Semaphore = new System.Threading.Semaphore(1, 1);
+            BeepSound = new Timer();
+            BeepSound.Interval = 500;
+            BeepSound.Elapsed += BeepTime;
+            Timer.Start();
 
         }
-
-        if (!MostrarAviso)
+        void BeepTime(object sender, ElapsedEventArgs e)
         {
-            BeepSound.Stop();
-            StateHasChanged();
-        }
-
-    }
-
-    void CheckTimersOut(object sender, ElapsedEventArgs e)
-    {
-        double totalMinutes = (TimeSpan.FromHours(DateTime.Now.Hour) + TimeSpan.FromMinutes(DateTime.Now.Minute)).TotalMinutes;
-
-        if (RemoveTemporizador(totalMinutes))
-        {
-            MostrarAviso = true;
-            StateHasChanged();
-        }
-
-
-    }
-    bool RemoveTemporizador(double totalMinutes)
-    {
-        bool removed = false;
-        Semaphore.WaitOne();
-
-        if (Temporizadores.ContainsKey(totalMinutes))
-        {
-            Console.WriteLine($"Timer {totalMinutes} is removed");
-            removed = Temporizadores.Remove(totalMinutes);
-            BeepSound.Start();
-
-        }
-        Semaphore.Release();
-        return removed;
-    }
-    public void Dispose()
-    {
-        Timer.Dispose();
-        Semaphore.Dispose();
-        BeepSound.Dispose();
-    }
-    void AddTemporizador(int totalMinutos)
-    {
-        TimeSpan time;
-        double total;
-
-        if (totalMinutos > 0)
-        {
-
-            time = TimeSpan.FromHours(DateTime.Now.Hour) + TimeSpan.FromMinutes(DateTime.Now.Minute);
-            total = time.TotalMinutes + totalMinutos;
-            Semaphore.WaitOne();
-            if (!Temporizadores.ContainsKey(total))
+            if (MostrarAviso)
             {
-                Temporizadores.Add(total, new DateTime(TimeSpan.FromMinutes(total).Ticks));
-                MostrarCreador = false;
-                TimeReference = default(DateTime);
+
+                JSRuntime.InvokeVoidAsync("eval",
+               "document.getElementById(\'sound\').play();");
+
+                MostrarAviso = ++CicloBeep % TOTALTIMEBEEP != 0;
+
+
+
+            }
+
+            if (!MostrarAviso)
+            {
+                BeepSound.Stop();
+                StateHasChanged();
+            }
+
+        }
+
+        void CheckTimersOut(object sender, ElapsedEventArgs e)
+        {
+            double totalMinutes = (TimeSpan.FromHours(DateTime.Now.Hour) + TimeSpan.FromMinutes(DateTime.Now.Minute)).TotalMinutes;
+
+            if (RemoveTemporizador(totalMinutes))
+            {
+                MostrarAviso = true;
+                StateHasChanged();
+            }
+
+
+        }
+        bool RemoveTemporizador(double totalMinutes)
+        {
+            bool removed = false;
+            Semaphore.WaitOne();
+
+            if (Temporizadores.ContainsKey(totalMinutes))
+            {
+                Console.WriteLine($"Timer {totalMinutes} is removed");
+                removed = Temporizadores.Remove(totalMinutes);
+                BeepSound.Start();
 
             }
             Semaphore.Release();
-            if (!MostrarCreador)
-                StateHasChanged();
+            return removed;
         }
-    }
+        public void Dispose()
+        {
+            Timer.Dispose();
+            Semaphore.Dispose();
+            BeepSound.Dispose();
+        }
+        void AddTemporizador(int totalMinutos)
+        {
+            TimeSpan time;
+            double total;
+
+            if (totalMinutos > 0)
+            {
+
+                time = TimeSpan.FromHours(DateTime.Now.Hour) + TimeSpan.FromMinutes(DateTime.Now.Minute);
+                total = time.TotalMinutes + totalMinutos;
+                Semaphore.WaitOne();
+                if (!Temporizadores.ContainsKey(total))
+                {
+                    Temporizadores.Add(total, new DateTime(TimeSpan.FromMinutes(total).Ticks));
+                    MostrarCreador = false;
+                    TimeReference = default(DateTime);
+
+                }
+                Semaphore.Release();
+                if (!MostrarCreador)
+                    StateHasChanged();
+            }
+        }
+    
 
 #line default
 #line hidden
