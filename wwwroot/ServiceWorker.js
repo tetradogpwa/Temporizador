@@ -55,7 +55,7 @@ self.addEventListener(networkFetchEvent, event => {
     const requestUrl = new URL(event.request.url);
     if (requestUrl.origin === location.origin) {
         if (requestUrl.pathname === baseURL) {
-            event.respondWith(caches.match(indexURL));
+            event.respondWith(caches.match(event.request));
             return;
         }
     }
@@ -70,7 +70,7 @@ self.addEventListener(networkFetchEvent, event => {
                         if (response.ok) {
                             if (requestUrl.origin === location.origin) {
                                 caches.open(staticCacheName).then(cache => {
-                                    cache.put(event.request.url, response);
+                                    cache.put(event.request, response);
                                 });
                             }
                         }
