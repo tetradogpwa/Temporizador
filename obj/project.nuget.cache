@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "p6uby+elg0yscaTRxXP7ugIvvE6XMDjUTH4eg7E/V5bcFS36Zp8N9WlKe4agXKGOI5LecVw6c+XmFayMYryZoQ==",
+  "dgSpecHash": "nO9Ln4HCd49z3QMTVuaRhXwURx56t5+X3DwAN53+FjZXZDYdfm1/r7X5zOhJH2ximQHXgPk931Q5G8owgYal5w==",
   "success": true,
   "projectFilePath": "C:\\Users\\tetra\\source\\repos\\TemporizadorBlazor\\Temporizadores.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\tetra\\.nuget\\packages\\blazorpwa.msbuild\\1.0.2\\blazorpwa.msbuild.1.0.2.nupkg.sha512",
     "C:\\Users\\tetra\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.3\\microsoft.aspnetcore.authorization.3.1.3.nupkg.sha512",
     "C:\\Users\\tetra\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.3\\microsoft.aspnetcore.components.3.1.3.nupkg.sha512",
     "C:\\Users\\tetra\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\3.1.3\\microsoft.aspnetcore.components.analyzers.3.1.3.nupkg.sha512",

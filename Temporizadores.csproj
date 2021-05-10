@@ -9,6 +9,11 @@
     <BlazorEnableCompression>false</BlazorEnableCompression>
   </PropertyGroup>
   
+  <PropertyGroup Label="PWA">
+    <ServiceWorkerRegisterInstallableType>installable-blazor</ServiceWorkerRegisterInstallableType>
+    <ServiceWorkerForce>true</ServiceWorkerForce>
+  </PropertyGroup>
+  
   <ItemGroup>
     <None Remove="docs\service-worker.js" />
     <None Remove="docs\wwwroot\.nojekyll" />
@@ -111,17 +116,15 @@
   </ItemGroup>
   
   <ItemGroup>
+    <PackageReference Include="BlazorPWA.MSBuild" Version="1.0.2">
+      
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.0" PrivateAssets="all" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.0" PrivateAssets="all" />
     <PackageReference Include="System.Net.Http.Json" Version="3.2.0" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Content Update="wwwroot\service-worker.js">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
   </ItemGroup>
 
 </Project>

@@ -180,3 +180,4 @@ C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Debug\netstandard2.1\Temporiz
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Debug\netstandard2.1\Temporizadores.dll
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Debug\netstandard2.1\Temporizadores.pdb
 C:\Users\tetra\source\repos\TemporizadorBlazor\bin\Debug\netstandard2.1\docs\manifest.json
+C:\Users\tetra\source\repos\TemporizadorBlazor\bin\Debug\netstandard2.1\docs\web.config

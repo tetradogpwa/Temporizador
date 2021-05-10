@@ -4,7 +4,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>docs</_PublishTargetUrl>
-    <History>True|2021-05-10T14:14:43.6211369Z;True|2021-05-10T16:12:59.8557601+02:00;True|2021-05-10T15:44:43.4434156+02:00;True|2021-05-10T15:29:08.8230006+02:00;True|2021-05-10T15:19:26.1202042+02:00;</History>
+    <_PublishTargetUrl>C:\Users\tetra\source\repos\TemporizadorBlazor\docs</_PublishTargetUrl>
+    <History>True|2021-05-10T15:26:06.0022176Z;True|2021-05-10T16:14:43.6211369+02:00;True|2021-05-10T16:12:59.8557601+02:00;True|2021-05-10T15:44:43.4434156+02:00;True|2021-05-10T15:29:08.8230006+02:00;True|2021-05-10T15:19:26.1202042+02:00;</History>
   </PropertyGroup>
 </Project>

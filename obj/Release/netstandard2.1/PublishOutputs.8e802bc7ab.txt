@@ -14,14 +14,13 @@ C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\css\open-iconic\ICON-LICENSE
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\css\open-iconic\README.md
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\Data\beep.mp3
+C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\default-icon-192x192.png
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\favicon.ico
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\icon-512.png
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\index.html
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\manifest.json
-C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\service-worker-assets.js
-C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\service-worker-assets.js.br
-C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\service-worker-assets.js.gz
-C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\service-worker.js
+C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\ServiceWorker.js
+C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\ServiceWorkerRegister.js
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\_framework\_bin\Microsoft.AspNetCore.Components.dll
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\_framework\_bin\Microsoft.AspNetCore.Components.Web.dll
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\PubTmp\Out\wwwroot\_framework\_bin\Microsoft.AspNetCore.Components.WebAssembly.dll
