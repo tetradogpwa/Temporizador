@@ -1,4 +1,3 @@
-C:\Users\tetra\source\repos\TemporizadorBlazor\bin\Release\netstandard2.1\docs\sample-data\weather.json
 C:\Users\tetra\source\repos\TemporizadorBlazor\bin\Release\netstandard2.1\docs\_framework\blazor.boot.json
 C:\Users\tetra\source\repos\TemporizadorBlazor\bin\Release\netstandard2.1\Temporizadores.StaticWebAssets.xml
 C:\Users\tetra\source\repos\TemporizadorBlazor\bin\Release\netstandard2.1\Temporizadores.dll
@@ -104,8 +103,6 @@ C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\Tempor
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\Temporizadores.csproj.CopyComplete
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\Temporizadores.dll
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\Temporizadores.pdb
-C:\Users\tetra\source\repos\TemporizadorBlazor\bin\Release\netstandard2.1\docs\web.config
-C:\Users\tetra\source\repos\TemporizadorBlazor\bin\Release\netstandard2.1\docs\wwwroot\_framework\blazor.boot.json
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\integrity\Kf1eb4-6LuRS2U1KNdnA9XkACIKT2wneLGi9ygT_q44=.hash
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\integrity\QdUDIdW41o12JcC_tjlEb21k5EqO2R9wALXgsjiVJN0=.hash
 C:\Users\tetra\source\repos\TemporizadorBlazor\obj\Release\netstandard2.1\integrity\LHewf9thylus87a74PlUIMBgz5CaWGqQsTXG-YfYwZM=.hash
