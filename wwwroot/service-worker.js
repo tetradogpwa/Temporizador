@@ -4,7 +4,7 @@ const CACHE_NAME = "CACHE_" + APP;
 
 self.addEventListener('fetch', e => {
 
-    const respuesta=caches.match(e.request).then(resp => {
+    caches.match(e.request).then(resp => {
         if (!resp) {
             //no existe la busco por internet
             resp = fetch(e.request).then(respuesta => {
@@ -14,7 +14,6 @@ self.addEventListener('fetch', e => {
             });
         }
         return resp;
-    });
+    }).then(e.respondWith);
 
-    e.respondWith(respuesta);
 });
