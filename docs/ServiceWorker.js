@@ -1,5 +1,5 @@
-const baseURL = '/';
-const indexURL = '/index.html';
+const baseURL = './';
+const indexURL = 'index.html';
 const networkFetchEvent = 'fetch';
 const swInstallEvent = 'install';
 const swInstalledEvent = 'installed';
@@ -7,26 +7,26 @@ const swActivateEvent = 'activate';
 const staticCachePrefix = 'blazor-cache-v';
 const staticCacheName = 'blazor-cache-v1';
 const requiredFiles = [
-"/404.html",
-"/css/app.css",
-"/css/bootstrap/bootstrap.min.css",
-"/css/bootstrap/bootstrap.min.css.map",
-"/css/open-iconic/FONT-LICENSE",
-"/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
-"/css/open-iconic/font/fonts/open-iconic.eot",
-"/css/open-iconic/font/fonts/open-iconic.otf",
-"/css/open-iconic/font/fonts/open-iconic.svg",
-"/css/open-iconic/font/fonts/open-iconic.ttf",
-"/css/open-iconic/font/fonts/open-iconic.woff",
-"/css/open-iconic/ICON-LICENSE",
-"/css/open-iconic/README.md",
-"/Data/beep.mp3",
-"/default-icon-192x192.png",
-"/favicon.ico",
-"/icon-512.png",
-"/index.html",
-"/ServiceWorkerRegister.js",
-"/manifest.json"
+"404.html",
+"css/app.css",
+"css/bootstrap/bootstrap.min.css",
+"css/bootstrap/bootstrap.min.css.map",
+"css/open-iconic/FONT-LICENSE",
+"css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+"css/open-iconic/font/fonts/open-iconic.eot",
+"css/open-iconic/font/fonts/open-iconic.otf",
+"css/open-iconic/font/fonts/open-iconic.svg",
+"css/open-iconic/font/fonts/open-iconic.ttf",
+"css/open-iconic/font/fonts/open-iconic.woff",
+"css/open-iconic/ICON-LICENSE",
+"css/open-iconic/README.md",
+"Data/beep.mp3",
+"default-icon-192x192.png",
+"favicon.ico",
+"icon-512.png",
+"index.html",
+"ServiceWorkerRegister.js",
+"manifest.json"
 ];
 // * listen for the install event and pre-cache anything in filesToCache * //
 self.addEventListener(swInstallEvent, event => {

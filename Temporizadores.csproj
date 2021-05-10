@@ -17,6 +17,8 @@
   <ItemGroup>
     <None Remove="docs\index.html" />
     <None Remove="docs\service-worker.js" />
+    <None Remove="docs\ServiceWorker.js" />
+    <None Remove="docs\ServiceWorkerRegister.js" />
     <None Remove="docs\wwwroot\.nojekyll" />
     <None Remove="docs\wwwroot\404.html" />
     <None Remove="docs\wwwroot\css\app.css" />
@@ -43,6 +45,14 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Include="docs\service-worker.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="docs\ServiceWorker.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="docs\ServiceWorkerRegister.js">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
