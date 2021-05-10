@@ -1,0 +1,5 @@
+﻿<linker>
+  <assembly fullname="Temporizadores">
+    <type fullname="*" required="true" />
+  </assembly>
+</linker>
