@@ -10,6 +10,7 @@
   </PropertyGroup>
   
   <ItemGroup>
+    <None Remove="docs\service-worker.js" />
     <None Remove="docs\wwwroot\.nojekyll" />
     <None Remove="docs\wwwroot\404.html" />
     <None Remove="docs\wwwroot\css\app.css" />
@@ -31,6 +32,10 @@
   </ItemGroup>
   
   <ItemGroup>
+    <Content Include="docs\service-worker.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
     <Content Include="docs\wwwroot\.nojekyll">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
