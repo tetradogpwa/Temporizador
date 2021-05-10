@@ -1,16 +1,16 @@
 {
   "short_name": "TemporizadoresBlazor",
   "name": "Temporizadores",
-  "start_url": "./",
+  "start_url": "/",
   "display": "standalone",
   "icons": [
     {
-      "src":"/default-icon-192x192.png",
+      "src":"default-icon-192x192.png",
       "type":"image/png",
       "sizes":"192x192"
     },
     {
-      "src":"/icon-512.png",
+      "src":"icon-512.png",
       "type":"image/png",
       "sizes":"512x512"
     }
