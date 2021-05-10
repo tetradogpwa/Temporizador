@@ -69,7 +69,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-+65hXuOwDEZjgh4btio8OEhU0xFMaThcjKm1r4UYe5M=",
+        "hash": "sha256-LMWBYADUJgnpmgMdqKywylEAUeZONR5b6M/qFhmRXm8=",
       "url": "framework\/_bin\/Microsoft.AspNetCore.Components.dll"
     },
     {
