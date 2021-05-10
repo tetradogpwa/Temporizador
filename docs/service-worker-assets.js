@@ -61,7 +61,7 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-Nqu1PxAw1XyqBFzxux7RyTKJFDZZKH0nViw4y4OHs9s=",
+        "hash": "sha256-ZN21Q9HL06BimHKDXSn5ZAI3PfCE2Wz5T8/4EiO1FQU=",
       "url": "index.html"
     },
     {
