@@ -1,7 +1,7 @@
 {
   "short_name": "TemporizadoresBlazor",
   "name": "Temporizadores",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "icons": [
     {
